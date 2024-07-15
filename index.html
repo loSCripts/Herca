@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Écran de chargement avec animation</title>
+    <style>
+        /* Style pour l'écran de chargement */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Animation de chargement */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loader {
+            border: 4px solid #3498db;
+            border-top: 4px solid transparent;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Votre contenu HTML ici -->
+
+    <!-- Écran de chargement avec animation -->
+    <div class="loader"></div>
+
+    <!-- Ajoutez le script JavaScript pour la redirection -->
+    <script>
+        setTimeout(function() {
+            // Redirige vers un autre site (par exemple, https://www.example.com)
+            window.location.href = "https://herca.bigcartel.com";
+        }, 500); // 1000 millisecondes = 1 seconde
+    </script>
+</body>
+</html>   
